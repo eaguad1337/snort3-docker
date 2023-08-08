@@ -1,0 +1,2 @@
+-- custom rules
+-- alert icmp any any -> any any (msg:"Pinging...";sid:1000004;)
