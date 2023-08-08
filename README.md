@@ -7,13 +7,13 @@ Snort 3 implementation for Docker.
 This docker implementation is tested with the following command line, that allows you to use snort as it is installed on your machine. This way, you can intercept traffic on your host machine.
 
 ```
-$ docker run --rm --name snort3 --net=host --cap-add=NET_ADMIN -d snort3
+$ docker run --rm --name snort3 --net=host --cap-add=NET_ADMIN -d eaguad/snort3
 ```
 
 You could pass SNORT_INTERFACE environment variable if you want to specify the name of the interface.
 
 ```
-$ docker run --rm --name snort3 --net=host --cap-add=NET_ADMIN -d -e SNORT_INTERFACE=enp3s0  snort3 
+$ docker run --rm --name snort3 --net=host --cap-add=NET_ADMIN -d -e SNORT_INTERFACE=enp3s0 eaguad/snort3 
 ```
 
 # Customization
